@@ -21,25 +21,25 @@ const messageManager = {
     return message;
   },
   updateMessage: async (message) => {
+    // TODO: implement
     const success = await messageStore.update(message.id, message);
     if (!success) {
       throw new Error("Cannot update a message that doesn't exist!")  
     }
     return message;
-    // TODO: implement
   },
   removeMessage: async (messageId) => {
+    // TODO: implement
     await messageStore.remove(messageId);
     return true;
-    // TODO: implement
   },
   getMessage: async (messageId) => {
+    // TODO: implement
     const message = await messageStore.read(messageId);
     if (!message) {
       throw new Error(`Could not find message with id ${messageId}!`);
     }
     return message;
-    // TODO: implement
   },
   getAllMessages: async () => {
     // TODO: implement
