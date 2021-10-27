@@ -1,5 +1,18 @@
 {
   "users": [],
-  "channels": [],
+  "channels": [
+    {
+      "id": "617944fd1208be577e000001",
+      "name": "Sports"
+    },
+    {
+      "id": "6179450459bf32573b000001",
+      "name": "Music"
+    },
+    {
+      "id": "61794511d000acb467000001",
+      "name": "Web Development"
+    }
+  ],
   "messages": []
 }
