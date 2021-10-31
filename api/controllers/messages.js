@@ -39,36 +39,34 @@ const messageController = {
     }
     // passed as /api/messages/:messageId
     // TODO implement
-    res.send('Not yet implemented');
+    // res.send('Not yet implemented');
   },
   post: async (req, res) => {
-    // creates a new message based on the passed body
-    // TODO implement
     try {
-      const body = req.body;
-      const message = await messageManager.createMessage(body.name);
-      res.status(200).send(JSON.stringify(channel));
+      const user = req.body.user;
+      const content = req.body.text;
+      const channelId = req.params.channelId;
+      const message = await messageManager.createMessage(user, content, channelId);
+      res.status(200).send(JSON.stringify(message));
     } catch (error) {
       res.status(500).send(error);
     }
-    res.send('Not yet implemented');
+    // creates a new message based on the passed body
+    // TODO implement
+    // res.send('Not yet implemented');
   },
   delete: async (req, res) => {
-    // deleted the message with the specified id
-    // passed as /api/messages/:messageId
-    // TODO implement
     try {
       const messageId = req.params.messageId;
       await messageManager.removeMessage(messageId);
-      res.status(200).send(
-        JSON.stringify({
-          message: `Message ${messageId} was successfully deleted!`
-        })
-      )
+      res.status(200).send(JSON.stringify({ message: `Message ${messageId} was successfully deleted!` }));
     } catch (error) {
       res.status(500).send(error);
     }
-    res.send('Not yet implemented');
+    // deleted the message with the specified id
+    // passed as /api/messages/:messageId
+    // TODO implement
+    // res.send('Not yet implemented');
   },
 };
 
