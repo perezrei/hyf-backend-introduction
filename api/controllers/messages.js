@@ -6,7 +6,7 @@ const messageController = {
     // TODO implement
     try {
       const messages = await messageManager.getAllMessages();
-      res.status(200).send(JSON.stringify([]));
+      res.status(200).send(JSON.stringify(messages));
     } catch(error) {
       res.status(500).send(error);
     }
@@ -21,7 +21,7 @@ const messageController = {
     // updates the messages with the specified id
     try {
       const messageId = req.params.messageId;
-      const newMData = req.body;
+      const newData = req.body;
       if (newData.id !== messageId) {
         throw Error('Cannot change message ID after creation');
       }
@@ -37,12 +37,30 @@ const messageController = {
   post: async (req, res) => {
     // creates a new message based on the passed body
     // TODO implement
+    try {
+      const body = req.body;
+      const message = await messageManager.createMessage(body.name);
+      res.status(200).send(JSON.stringify(channel));
+    } catch (error) {
+      res.status(500).send(error);
+    }
     res.send('Not yet implemented');
   },
   delete: async (req, res) => {
     // deleted the message with the specified id
     // passed as /api/messages/:messageId
     // TODO implement
+    try {
+      const messageId = req.params.messageId;
+      await messageManager.removeMessage(messageId);
+      res.status(200).send(
+        JSON.stringify({
+          message: `Message ${messageId} was successfully deleted!`
+        })
+      )
+    } catch (error) {
+      res.status(500).send(error);
+    }
     res.send('Not yet implemented');
   },
 };
