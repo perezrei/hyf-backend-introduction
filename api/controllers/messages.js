@@ -12,11 +12,18 @@ const messageController = {
     }
   },
   getMessagesForChannel: async (req, res) => {
-    // returns the messages that belong in the channel with the specified id
-    // passed as /api/channels/:channelId/messages
-    // TODO implement
-    res.send(JSON.stringify([]));
+    try {
+      const channelId = req.params.channelId;
+      const messages = await messageManager.getMessagesForChannel(channelId);
+      res.status(200).send(JSON.stringify(messages));
+    } catch (error) {
+      res.status(500).send(error);
+    }
+    // res.send(JSON.stringify([]));
   },
+  // returns the messages that belong in the channel with the specified id
+  // passed as /api/channels/:channelId/messages
+  // TODO implement
   put: async (req, res) => {
     // updates the messages with the specified id
     try {
