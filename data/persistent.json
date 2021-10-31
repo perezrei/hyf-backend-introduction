@@ -30,6 +30,20 @@
     {
       "id": "617e692a7b9bd5b2fa000001",
       "date": "10/31/2021, 11:00:10 AM"
+    },
+    {
+      "text": "The very first message in Sports Channel",
+      "id": "617e73f9174236b36a000001",
+      "user": "reinaldo",
+      "date": "10/31/2021, 11:45:49 AM",
+      "channelId": "617944fd1208be577e000001"
+    },
+    {
+      "text": "Test",
+      "id": "617e7410ea5295777c000001",
+      "user": "reinaldo",
+      "date": "10/31/2021, 11:46:19 AM",
+      "channelId": "61794511d000acb467000001"
     }
   ]
 }
