@@ -16,8 +16,8 @@
 - api
 - client
 - data
+- index.js
 - planning
-- [index.js](#indexjs)
 - [vite.config.js](#viteconfigjs)
 
 ---
@@ -44,13 +44,13 @@
 
 ---
 
-# /planning
+# /index.js
 
 ---
 
-<details><summary><a href="../../index.js" id="indexjs">../index.js</a></summary>
+# /planning
 
-</details>
+---
 
 <details><summary><a href="../../vite.config.js" id="viteconfigjs">../vite.config.js</a></summary>
 
