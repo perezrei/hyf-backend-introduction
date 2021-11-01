@@ -2,55 +2,50 @@
   "users": [],
   "channels": [
     {
-      "id": "617944fd1208be577e000001",
-      "name": "Sports"
-    },
-    {
       "id": "6179450459bf32573b000001",
       "name": "Music"
     },
     {
       "id": "61794511d000acb467000001",
       "name": "Web Development"
+    },
+    {
+      "id": "617ff691865f025170000001",
+      "name": "Languages"
+    },
+    {
+      "id": "618012f188e79562e1000004",
+      "name": "Sports"
     }
   ],
   "messages": [
     {
-      "id": "617e6927f42aaf0fc5000001",
-      "date": "10/31/2021, 10:59:41 AM"
-    },
-    {
-      "id": "617e69296bd15cf3ad000001",
-      "date": "10/31/2021, 11:00:09 AM"
-    },
-    {
-      "id": "617e69296bd15cf3ad000002",
-      "date": "10/31/2021, 11:00:09 AM"
-    },
-    {
-      "id": "617e692a7b9bd5b2fa000001",
-      "date": "10/31/2021, 11:00:10 AM"
-    },
-    {
-      "text": "The very first message in Sports Channel",
-      "id": "617e73f9174236b36a000001",
-      "user": "reinaldo",
-      "date": "10/31/2021, 11:45:49 AM",
-      "channelId": "617944fd1208be577e000001"
-    },
-    {
-      "text": "Test",
+      "text": "Opening Web development channel",
       "id": "617e7410ea5295777c000001",
-      "user": "reinaldo",
+      "user": "Reinaldo",
       "date": "10/31/2021, 11:46:19 AM",
       "channelId": "61794511d000acb467000001"
     },
     {
-      "text": "This is a new test",
-      "id": "617ee2668509d9c789000001",
-      "user": "reinaldo",
-      "date": "10/31/2021, 7:36:34 PM",
-      "channelId": "617944fd1208be577e000001"
+      "text": "Second message in web development channel",
+      "id": "617fe443aafcb10e88000001",
+      "user": "Bill",
+      "date": "11/1/2021, 1:57:13 PM",
+      "channelId": "61794511d000acb467000001"
+    },
+    {
+      "text": "Opening languages channel",
+      "id": "617ff69b25d9b5abf7000001",
+      "user": "Reinaldo",
+      "date": "11/1/2021, 3:15:46 PM",
+      "channelId": "617ff691865f025170000001"
+    },
+    {
+      "text": "This is the second message in languages channel",
+      "id": "617ff9e7980e8b1c28000001",
+      "user": "Anne Marie",
+      "date": "11/1/2021, 3:15:55 PM",
+      "channelId": "617ff691865f025170000001"
     }
   ]
 }

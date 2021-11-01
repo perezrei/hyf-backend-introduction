@@ -7,7 +7,7 @@ const messageController = {
     try {
       const messages = await messageManager.getAllMessages();
       res.status(200).send(JSON.stringify(messages));
-    } catch(error) {
+    } catch (error) {
       res.status(500).send(error);
     }
   },
@@ -15,7 +15,8 @@ const messageController = {
     try {
       const channelId = req.params.channelId;
       const messages = await messageManager.getMessagesForChannel(channelId);
-      res.status(200).send(JSON.stringify(messages));
+      // res.status(200).send(JSON.stringify(messages));
+      res.send(JSON.stringify(messages));
     } catch (error) {
       res.status(500).send(error);
     }
@@ -46,7 +47,11 @@ const messageController = {
       const user = req.body.user;
       const content = req.body.text;
       const channelId = req.params.channelId;
-      const message = await messageManager.createMessage(user, content, channelId);
+      const message = await messageManager.createMessage(
+        user,
+        content,
+        channelId,
+      );
       res.status(200).send(JSON.stringify(message));
     } catch (error) {
       res.status(500).send(error);
@@ -59,7 +64,11 @@ const messageController = {
     try {
       const messageId = req.params.messageId;
       await messageManager.removeMessage(messageId);
-      res.status(200).send(JSON.stringify({ message: `Message ${messageId} was successfully deleted!` }));
+      res.status(200).send(
+          JSON.stringify({
+            message: `Message ${messageId} was successfully deleted!`,
+          }),
+        );
     } catch (error) {
       res.status(500).send(error);
     }

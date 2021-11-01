@@ -1,4 +1,4 @@
-import { sendMessage } from "../handlers/handlers.js";
+import { sendMessage } from '../handlers/handlers.js';
 
 export const registerSendMessageListener = () => {
   document.addEventListener('keyup', function (event) {
@@ -6,4 +6,4 @@ export const registerSendMessageListener = () => {
       sendMessage();
     }
   });
-}
+};

@@ -13,8 +13,8 @@ can be found on the reference-implementation branch.
 
 - `npm install`
 - **run the server**
-  - `npm run dev:api` - uses `nodemon` to restart the server each time you save a
-    change
+  - `npm run dev:api` - uses `nodemon` to restart the server each time you save
+    a change
   - `npm run start` - does not restart each time you save a change
 - **code checks**
   - `npm run format`

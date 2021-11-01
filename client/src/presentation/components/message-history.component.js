@@ -1,9 +1,9 @@
 export const messageHistory = () => {
   const messageHistoryEl = document.createElement('div');
   messageHistoryEl.classList.add('message-history');
-  messageHistoryEl.id= "messageHistory";
+  messageHistoryEl.id = 'messageHistory';
   return messageHistoryEl;
-}
+};
 
 export const getMessagesInnerHtml = (messages) => {
   return messages

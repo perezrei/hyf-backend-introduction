@@ -1,4 +1,9 @@
-import { fetchChannels, fetchMessagesForChannel, postChannel, postMessage } from '../../data-access/api-calls/calls.js';
+import {
+  fetchChannels,
+  fetchMessagesForChannel,
+  postChannel,
+  postMessage,
+} from '../../data-access/api-calls/calls.js';
 import { getHeaderInnerHtml } from '../components/header.component.js';
 import { getMessagesInnerHtml } from '../components/message-history.component.js';
 import { getChannelListInnerHtml } from '../components/channel-listings.component.js';
@@ -34,4 +39,4 @@ export const updateUI = async () => {
   const channels = await fetchChannels();
   channelListEl.innerHTML = getChannelListInnerHtml(channels);
   messagesEl.innerHTML = getMessagesInnerHtml(messages);
-}
+};

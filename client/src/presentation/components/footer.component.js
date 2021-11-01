@@ -2,7 +2,7 @@ import { insertOrUpdate, find } from '../../data-access/index.js';
 
 export const footer = () => {
   const footerEl = document.createElement('div');
-  footerEl.id= 'footer';
+  footerEl.id = 'footer';
   footerEl.classList.add('footer');
   footerEl.innerHTML = `
   <div class="user-menu"><span class="user-menu_profile-pic"></span>
@@ -15,4 +15,4 @@ export const footer = () => {
   </div>
   `;
   return footerEl;
-}
+};

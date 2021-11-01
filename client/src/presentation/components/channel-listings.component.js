@@ -1,11 +1,11 @@
-import { find } from "../../data-access/index.js";
+import { find } from '../../data-access/index.js';
 
 export const channelListing = () => {
   const channelListingsEl = document.createElement('div');
-  channelListingsEl.id = "channelListings";
+  channelListingsEl.id = 'channelListings';
   channelListingsEl.classList.add('listings');
   return channelListingsEl;
-}
+};
 
 export const getChannelListInnerHtml = (channels) => {
   const channelEntriesHtml = channels
