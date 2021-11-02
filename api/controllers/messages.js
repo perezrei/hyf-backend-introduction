@@ -1,4 +1,4 @@
-const messageManager = require('../business-logic/messages');
+const messageManager = require("../business-logic/messages");
 
 const messageController = {
   get: async (req, res) => {
@@ -6,7 +6,8 @@ const messageController = {
     // TODO implement
     try {
       const messages = await messageManager.getAllMessages();
-      res.status(200).send(JSON.stringify(messages));
+      // res.status(200).send(JSON.stringify(messages));
+      res.send(JSON.stringify(messages));
     } catch (error) {
       res.status(500).send(error);
     }

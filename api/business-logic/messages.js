@@ -14,8 +14,8 @@ const messageManager = {
       text: messageContent,
       id: objectId().toString(),
       user: user,
-      date: newDate(), //  date: newDate.toLocaleString(),
       channelId: channelId,
+      date: newDate(), //  date: newDate.toLocaleString(),
     };
     await messageStore.create(message);
     return message;
@@ -53,6 +53,7 @@ const messageManager = {
   },
   getMessagesForChannel: async (channelId) => {
     // TODO: implement (NOT DONE BY ME)
+    // copied from master branch
     const result = [];
     const allMessages = await messageStore.all();
     for (let i = 0; i < allMessages.length; i++) {
