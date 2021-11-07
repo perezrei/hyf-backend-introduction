@@ -1,3 +1,4 @@
+
 const messageManager = require("../business-logic/messages");
 
 const messageController = {
@@ -6,8 +7,8 @@ const messageController = {
     // TODO implement
     try {
       const messages = await messageManager.getAllMessages();
-      // res.status(200).send(JSON.stringify(messages));
-      res.send(JSON.stringify(messages));
+      res.status(200).send(JSON.stringify(messages));
+      // res.send(JSON.stringify(messages));
     } catch (error) {
       res.status(500).send(error);
     }
@@ -16,8 +17,8 @@ const messageController = {
     try {
       const channelId = req.params.channelId;
       const messages = await messageManager.getMessagesForChannel(channelId);
-      // res.status(200).send(JSON.stringify(messages));
-      res.send(JSON.stringify(messages));
+      res.status(200).send(JSON.stringify(messages));
+      // res.send(JSON.stringify(messages));
     } catch (error) {
       res.status(500).send(error);
     }
@@ -54,6 +55,7 @@ const messageController = {
         channelId,
       );
       res.status(200).send(JSON.stringify(message));
+      console.log(error);
     } catch (error) {
       res.status(500).send(error);
     }

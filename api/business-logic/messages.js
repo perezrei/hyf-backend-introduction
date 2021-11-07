@@ -15,7 +15,7 @@ const messageManager = {
       id: objectId().toString(),
       user: user,
       channelId: channelId,
-      date: newDate(), //  date: newDate.toLocaleString(),
+      date: new Date(), //  date: newDate.toLocaleString(),
     };
     await messageStore.create(message);
     return message;

@@ -46,6 +46,62 @@
       "user": "Anne Marie",
       "date": "11/1/2021, 3:15:55 PM",
       "channelId": "617ff691865f025170000001"
+    },
+    {
+      "text": "This is the first message in Music channel",
+      "id": "61819272136fe9da54000001",
+      "user": "Michael",
+      "channelId": "6179450459bf32573b000001",
+      "date": "2021-11-02T19:33:06.406Z"
+    },
+    {
+      "text": "This is the very first message in Sports channel",
+      "id": "6181929207c71e1254000001",
+      "user": "Michael",
+      "channelId": "618012f188e79562e1000004",
+      "date": "2021-11-02T19:33:38.420Z"
+    },
+    {
+      "text": "This is a new test",
+      "id": "61819f21865dcc33b2000001",
+      "user": "reinaldo",
+      "channelId": "617ff691865f025170000001",
+      "date": "2021-11-02T20:27:13.915Z"
+    },
+    {
+      "text": "Sport is good!!",
+      "id": "6181a3e905c05388da000001",
+      "user": "Louis",
+      "channelId": "618012f188e79562e1000004",
+      "date": "2021-11-02T20:47:37.499Z"
+    },
+    {
+      "text": "I love music!",
+      "id": "6181a418fb0445e471000001",
+      "user": "Louis",
+      "channelId": "6179450459bf32573b000001",
+      "date": "2021-11-02T20:48:24.052Z"
+    },
+    {
+      "text": "I'm learning JavaScript",
+      "id": "6181a4c7d7018c3838000001",
+      "user": "Samuel",
+      "channelId": "61794511d000acb467000001",
+      "date": "2021-11-02T20:51:19.686Z"
+    },
+    {
+      "text": "I love music too!!",
+      "id": "618261010b6bc888e6000001",
+      "user": "Peter",
+      "channelId": "6179450459bf32573b000001",
+      "date": "2021-11-03T10:14:25.276Z"
+    },
+    {
+      "text": "Music is wonderful",
+      "id": "618789162a6b555063000001",
+      "user": "Reinaldo",
+      "channelId": "6179450459bf32573b000001",
+      "date": "2021-11-07T08:06:46.227Z"
     }
   ]
 }
